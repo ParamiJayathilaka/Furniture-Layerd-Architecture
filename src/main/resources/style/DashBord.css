@@ -1,0 +1,7 @@
+.Button{
+    -fx-background-color:#C0C8CA ;
+    -fx-background-radius: 50;
+    -fx-font-size: 20;
+    -fx-text-fill: #ffff;
+    -fx-font-weight: bold;
+}

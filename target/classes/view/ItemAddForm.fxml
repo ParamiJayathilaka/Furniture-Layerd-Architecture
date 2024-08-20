@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="195.0" prefWidth="638.0" style="-fx-background-color: #9CA1A5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Furniture.controller.ItemAddFormController">
+   <children>
+      <JFXTextField fx:id="txtItemName" alignment="CENTER" focusColor="#070707" layoutX="43.0" layoutY="60.0" prefHeight="29.0" prefWidth="143.0" promptText="Item Name">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMaterial" alignment="CENTER" focusColor="#070707" layoutX="43.0" layoutY="109.0" prefHeight="29.0" prefWidth="143.0" promptText="Material Type">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtUnitPrize" alignment="CENTER" focusColor="#070707" layoutX="431.0" layoutY="61.0" prefHeight="29.0" prefWidth="143.0" promptText="Unit Price">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtColour" alignment="CENTER" focusColor="#070707" layoutX="232.0" layoutY="111.0" prefHeight="29.0" prefWidth="143.0" promptText="Colour">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSize" alignment="CENTER" focusColor="#070707" layoutX="232.0" layoutY="60.0" prefHeight="29.0" prefWidth="143.0" promptText="Size">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <Text fontSmoothingType="LCD" layoutX="58.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Details">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="528.0" layoutY="138.0" onAction="#btnEDoneOnAction" prefHeight="36.0" prefWidth="93.0" style="-fx-background-color: BLACK;" styleClass="loginBtn" text="Done" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Text fontSmoothingType="LCD" layoutX="431.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="39.0" fitWidth="20.0" layoutX="33.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/item.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="20.0" layoutX="401.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/price.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtIID" alignment="CENTER" focusColor="#070707" layoutX="43.0" layoutY="143.0" prefHeight="29.0" prefWidth="143.0" promptText="IID">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="39.0" fitWidth="20.0" layoutX="601.0" layoutY="16.0" onMouseClicked="#exitItemOnClock" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/close.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtQtyAdd" alignment="CENTER" focusColor="#070707" layoutX="241.0" layoutY="158.0" prefHeight="29.0" prefWidth="143.0" promptText="QTY">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

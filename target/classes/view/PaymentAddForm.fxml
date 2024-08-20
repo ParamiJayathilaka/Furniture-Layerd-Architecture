@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="182.0" prefWidth="668.0" style="-fx-background-color: #9CA1A5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Furniture.controller.PaymentAddFormController">
+   <children>
+      <JFXTextField fx:id="txtCash" alignment="CENTER" focusColor="#070707" layoutX="196.0" layoutY="60.0" prefHeight="29.0" prefWidth="123.0" promptText="Cach">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtBalance" alignment="CENTER" focusColor="#070707" layoutX="196.0" layoutY="107.0" prefHeight="29.0" prefWidth="123.0" promptText="Balance">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPID" alignment="CENTER" focusColor="#070707" layoutX="42.0" layoutY="60.0" prefHeight="29.0" prefWidth="123.0" promptText="PID">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTime" alignment="CENTER" focusColor="#070707" layoutX="364.0" layoutY="60.0" prefHeight="29.0" prefWidth="143.0" promptText="Time">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <Text fontSmoothingType="LCD" layoutX="43.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment ID">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="18.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/name.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnPaymentDone" layoutX="557.0" layoutY="136.0" onAction="#btnPDoneOnAction" prefHeight="36.0" prefWidth="93.0" style="-fx-background-color: BLACK;" styleClass="loginBtn" text="Done" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Text fontSmoothingType="LCD" layoutX="557.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="39.0" fitWidth="20.0" layoutX="534.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/calendar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="20.0" layoutX="195.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/price.png" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="222.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="39.0" fitWidth="20.0" layoutX="373.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/time.png" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="400.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="btnPaymetExit" fitHeight="39.0" fitWidth="20.0" layoutX="630.0" layoutY="19.0" onMouseClicked="#exitPaymentOnClock" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/close.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="txtPayAddDate" layoutX="534.0" layoutY="66.0" prefHeight="25.0" prefWidth="123.0">
+
+      </DatePicker>
+   </children>
+</AnchorPane>

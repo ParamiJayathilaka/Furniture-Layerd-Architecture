@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="257.0" prefWidth="494.0" style="-fx-background-color: #9CA1A5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Furniture.controller.DelivaryUpdateFormController">
+   <children>
+      <JFXTextField fx:id="txtDid" alignment="CENTER" focusColor="#070707" layoutX="31.0" layoutY="115.0" prefHeight="29.0" prefWidth="123.0" promptText="Driver ID">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEid" alignment="CENTER" focusColor="#070707" layoutX="31.0" layoutY="173.0" prefHeight="29.0" prefWidth="123.0" promptText="Employee ID">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <Text fontSmoothingType="LCD" layoutX="37.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Details">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="11.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/name.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnDDelete" layoutX="387.0" layoutY="202.0" onAction="#btnDDeleteOnAction" prefHeight="36.0" prefWidth="93.0" style="-fx-background-color: BLACK;" styleClass="loginBtn" text="DELETE" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtTime" alignment="CENTER" focusColor="#070707" layoutX="181.0" layoutY="115.0" prefHeight="29.0" prefWidth="133.0" promptText="Time">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <Text fontSmoothingType="LCD" layoutX="218.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="39.0" fitWidth="20.0" layoutX="192.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/time.png" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="357.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="39.0" fitWidth="20.0" layoutX="331.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/calendar.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtDSerch" alignment="CENTER" focusColor="BLACK" layoutX="14.0" layoutY="20.0" promptText=" Serch ID">
+         <font>
+            <Font name="Comic Sans MS Italic" size="13.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="29.0" fitWidth="27.0" layoutX="130.0" layoutY="21.0" onKeyPressed="#SerchDelivaryOnKeyPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/serch.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnDUpdate" layoutX="272.0" layoutY="202.0" onAction="#btnDUpdateOnAction" prefHeight="39.0" prefWidth="106.0" style="-fx-background-color: BLACK;" styleClass="loginBtn" text="UPDATE" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="39.0" fitWidth="20.0" layoutX="464.0" layoutY="4.0" onMouseClicked="#backPageOnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/close.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="txtDate" layoutX="335.0" layoutY="122.0" prefHeight="25.0" prefWidth="139.0" />
+   </children>
+</AnchorPane>

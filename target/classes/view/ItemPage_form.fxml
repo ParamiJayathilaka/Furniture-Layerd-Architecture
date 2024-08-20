@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" stylesheets="@../style/CustomerBoard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Furniture.controller.ItemFormController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/item.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-12.0" prefHeight="700.0" prefWidth="300.0" style="-fx-background-color: #858585;">
+         <children>
+            <JFXButton layoutX="75.0" layoutY="120.0" onAction="#btnCustomerOnAction" prefHeight="55.0" prefWidth="174.0" styleClass="Button" stylesheets="@../style/DashBord.css" text="Customer" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="86.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/customer.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="69.0" layoutY="550.0" onAction="#btnSalaryOnAction" prefHeight="55.0" prefWidth="174.0" styleClass="Button" stylesheets="@../style/DashBord.css" text="Salary" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="79.0" layoutY="209.0" onAction="#btnEmployeeOnAction" prefHeight="55.0" prefWidth="174.0" styleClass="Button" stylesheets="@../style/DashBord.css" text="Employee" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="71.0" layoutY="303.0" prefHeight="55.0" prefWidth="174.0" styleClass="Button" stylesheets="@../style/DashBord.css" text="Item" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="76.0" layoutY="388.0" onAction="#btnOrderOnAction" prefHeight="55.0" prefWidth="174.0" styleClass="Button" stylesheets="@../style/DashBord.css" text="Order" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="73.0" layoutY="468.0" onAction="#btnPaymentOnAction" prefHeight="55.0" prefWidth="174.0" styleClass="Button" stylesheets="@../style/DashBord.css" text="Payment" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="72.0" layoutY="622.0" onAction="#btnDelivaryOnAction" prefHeight="55.0" prefWidth="174.0" styleClass="Button" stylesheets="@../style/DashBord.css" text="Delivary" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="86.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/customer.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="100.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Order.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="88.0" layoutY="637.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Delivery.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="90.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/item.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="86.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Salary.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="91.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Salary.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="txtSearchItem" alignment="CENTER" focusColor="#2041a4" layoutX="306.0" layoutY="234.0" onMouseClicked="#serchItemOnClick" prefHeight="20.0" prefWidth="223.0" promptText=" Search ID" unFocusColor="BLACK">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAdd" layoutX="334.0" layoutY="150.0" onAction="#btnAddItemOnAction" prefHeight="44.0" prefWidth="102.0" styleClass="loginBtn" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnModify" layoutX="512.0" layoutY="146.0" onAction="#btnIUpdateOnAction" prefHeight="44.0" prefWidth="102.0" styleClass="loginBtn" text="MODIFY" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblItem" layoutX="341.0" layoutY="304.0" onMouseClicked="#orderOnMouseCilck" prefHeight="379.0" prefWidth="995.0">
+         <columns>
+            <TableColumn fx:id="colItemId" prefWidth="123.0" text="Item ID" />
+            <TableColumn fx:id="colItemName" prefWidth="173.0" text="Item Name" />
+            <TableColumn fx:id="colMaterialType" prefWidth="201.0" text="Matireal Type" />
+            <TableColumn fx:id="colSize" prefWidth="129.66668701171875" text="Size" />
+            <TableColumn fx:id="colColour" prefWidth="110.0" text="Colour" />
+            <TableColumn fx:id="colUnitPrize" prefWidth="167.3333740234375" text="Unit Price" />
+            <TableColumn fx:id="colQTY" prefWidth="89.0" text="QtyOnHand" />
+         </columns>
+      </TableView>
+      <Text layoutX="31.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liyanage Furniture">
+         <font>
+            <Font name="Maiandra GD" size="29.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="327.0" layoutY="53.0" onMouseClicked="#backHomeOnAction" prefHeight="55.0" prefWidth="68.0" styleClass="loginBtn" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

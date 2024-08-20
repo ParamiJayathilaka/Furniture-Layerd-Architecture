@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="268.0" prefWidth="596.0" style="-fx-background-color: #9CA1A5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Furniture.controller.OrderDetailsFormController">
+   <children>
+      <JFXTextField fx:id="txtOID" alignment="CENTER" focusColor="#070707" layoutX="43.0" layoutY="120.0" prefHeight="29.0" prefWidth="123.0" promptText="Order ID">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtIID" alignment="CENTER" focusColor="#070707" layoutX="43.0" layoutY="170.0" prefHeight="29.0" prefWidth="123.0" promptText="Item ID">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <Text fontSmoothingType="LCD" layoutX="48.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Details">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="24.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/name.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnOrderDelete" layoutX="492.0" layoutY="184.0" onAction="#btnODeleteOnAction" prefHeight="36.0" prefWidth="93.0" style="-fx-background-color: BLACK;" styleClass="loginBtn" text="DELETE" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtQTY" alignment="CENTER" focusColor="#070707" layoutX="233.0" layoutY="120.0" prefHeight="29.0" prefWidth="93.0" promptText="QTY">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPrice" alignment="CENTER" focusColor="#070707" layoutX="367.0" layoutY="120.0" prefHeight="29.0" prefWidth="133.0" promptText="Unit Price">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </JFXTextField>
+      <Text fontSmoothingType="LCD" layoutX="400.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="252.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="213.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/qty.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="20.0" layoutX="367.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/price.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtSearchOrder" alignment="CENTER" focusColor="BLACK" layoutX="23.0" layoutY="26.0" onMouseClicked="#SerchOrderOnClick" promptText=" Serch ID">
+         <font>
+            <Font name="Comic Sans MS Italic" size="13.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="29.0" fitWidth="27.0" layoutX="148.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/serch.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnOrderUpdate" layoutX="330.0" layoutY="184.0" onAction="#btnOUpdateOnAction" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: BLACK;" styleClass="loginBtn" text="UPDATE" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="btnorderDetailBACK" fitHeight="39.0" fitWidth="20.0" layoutX="565.0" layoutY="16.0" onMouseClicked="#backOrderOnKeyPress" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/close.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

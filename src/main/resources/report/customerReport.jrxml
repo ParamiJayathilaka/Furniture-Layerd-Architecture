@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="customerReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e2f4f19f-1726-40d3-b0f4-1012fdc59b9e">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Furniture Shop"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM customer;]]>
+	</queryString>
+	<field name="CID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CID"/>
+		<property name="com.jaspersoft.studio.field.label" value="CID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="firstName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="firstName"/>
+		<property name="com.jaspersoft.studio.field.label" value="firstName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="lastName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="lastName"/>
+		<property name="com.jaspersoft.studio.field.label" value="lastName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="street" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="street"/>
+		<property name="com.jaspersoft.studio.field.label" value="street"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="city" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="city"/>
+		<property name="com.jaspersoft.studio.field.label" value="city"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="lane" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="lane"/>
+		<property name="com.jaspersoft.studio.field.label" value="lane"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="NIC" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NIC"/>
+		<property name="com.jaspersoft.studio.field.label" value="NIC"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="MobileNumber" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MobileNumber"/>
+		<property name="com.jaspersoft.studio.field.label" value="MobileNumber"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<group name="CID">
+		<groupExpression><![CDATA[$F{CID}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="41" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="41" backcolor="#D4D2D2" uuid="d6875ec5-b52e-48b4-bb87-20bbc62c000e"/>
+				<staticText>
+					<reportElement mode="Transparent" x="152" y="6" width="260" height="30" forecolor="#FCFCFC" uuid="c80a6122-6f3f-4dac-ba37-626d5164eeae"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="22" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Customer Report]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="72" height="30" uuid="6a050195-bafd-4106-b3df-30a4054f3bd2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5862b8c4-edb4-4abb-85f0-a1d602f28819"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<text><![CDATA[CID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="0" width="69" height="30" uuid="01ec73cc-2953-4bb6-a458-5221ccc7b387">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e28c3068-dfea-404b-89b1-59732f173cdd"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<text><![CDATA[firstName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="0" width="69" height="30" uuid="0c0078c2-7749-4b0a-9e6e-3ad305533421">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ea289ce8-d4d5-4ab8-a01f-f2afaa71c48d"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<text><![CDATA[lastName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="0" width="69" height="30" uuid="ee0eeb5e-b76d-4025-87df-d334adfe5cd0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="61797bd8-53a9-489f-812e-54aec5112833"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<text><![CDATA[street]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="69" height="30" uuid="f6c9a43f-f5f0-4d9c-b537-375fec1fd4e2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7236b893-827a-41d3-8653-32a77fad71f0"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<text><![CDATA[city]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="0" width="69" height="30" uuid="e44a1257-1eec-4dcb-bc7a-1ada76a6de47">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a3f166d2-d64d-4d1e-9071-b1af9f15a1ad"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<text><![CDATA[lane]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="69" height="30" uuid="a54b2c94-291a-4126-8b45-20184efaa460">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5f065f77-c462-4c38-9542-5573aee34677"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<text><![CDATA[NIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="486" y="0" width="69" height="30" uuid="577df7b4-0ea9-42f7-8edd-67fa192785ce">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e8e0c53d-699b-4d95-b783-e87b23680f84"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<text><![CDATA[MobileNumber]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="43" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="72" height="30" uuid="6561af96-b016-4188-9cb1-f838de297659">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5862b8c4-edb4-4abb-85f0-a1d602f28819"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="72" y="0" width="69" height="30" uuid="421897cc-d8de-4c03-b105-2ccaa48bfca4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e28c3068-dfea-404b-89b1-59732f173cdd"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="0" width="69" height="30" uuid="f1623e19-8cbc-4809-b4d9-7a58af6c7084">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ea289ce8-d4d5-4ab8-a01f-f2afaa71c48d"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="0" width="69" height="30" uuid="09d395b2-d1ea-4c82-b786-2b5455277836">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="61797bd8-53a9-489f-812e-54aec5112833"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{street}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="69" height="30" uuid="81433831-bb5b-4f8a-b60f-b49673f54040">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7236b893-827a-41d3-8653-32a77fad71f0"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{city}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="0" width="69" height="30" uuid="3a77d7aa-101e-4475-992e-8442be9fb58e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a3f166d2-d64d-4d1e-9071-b1af9f15a1ad"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lane}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="69" height="30" uuid="0c1640af-f8af-48fa-a791-6d6cff806028">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5f065f77-c462-4c38-9542-5573aee34677"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="486" y="0" width="69" height="30" uuid="6e0fe556-1e1b-4f7a-9921-dc2dc21a8f15">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e8e0c53d-699b-4d95-b783-e87b23680f84"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Californian FB" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MobileNumber}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
